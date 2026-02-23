@@ -1,155 +1,141 @@
-import React from 'react'
+'use client'
 
-const navbar = () => {
-  return (
-    <div>
-       <div className="fixed left-0 top-0 right-0 z-[10] shrink-[0]" style={{"transform":"perspective(1200px)"}}>
-          <div className="contents">
+import React, { useState, useEffect, useRef } from 'react'
+import { globalData } from '../../app/globaldata'
 
-{/* 
-            navbar */}
-            <nav aria-label="Nav Closed - Desktop" className="items-center flex flex-col justify-start overflow-hidden relative w-full h-[38px] bg-[rgb(20,_20,_20)] gap-[0px] p-[10px]">
-              <div aria-label="Top" className="items-center flex h-min justify-center relative w-full gap-[0px] shrink-[0]">
-                <div className="items-start flex flex-col grow h-min justify-center overflow-hidden relative w-px basis-0 gap-[10px] shrink-[0]">
-                  <a href="https://timaxelsson.com/" className="items-center flex size-min justify-center relative text-[rgb(0,_0,_238)] gap-[10px] shrink-[0]" style={{"textDecoration":"rgb(0, 0, 238)"}}>
-                    <div aria-label="Edward Hugo" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                      <p className="text-center uppercase text-[rgb(242,_242,_242)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(242, 242, 242)"}}>TIM AXELSSON</p>
-                    </div>
-                  </a>
-                </div>
-                <div className="items-center flex grow h-min justify-center overflow-hidden relative w-px basis-0 gap-[10px] shrink-[0]">
-                  <div className="grow relative w-px basis-0 shrink-[0]">
-                    <div className="contents">
-                      <div aria-label="Navigation Text Flip 2" className="items-center flex h-min justify-center relative w-full gap-[10px]">
-                        <div className="items-center flex flex-col justify-center overflow-hidden relative w-min h-[18px] gap-[0px] shrink-[0]">
-                          <div aria-label="STYLIST &amp; MAKE UP ARTIST" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(242,_242,_242)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(242, 242, 242)"}}></p>
-                          </div>
-                          <div aria-label="STYLIST &amp; MAKE UP ARTIST" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(242,_242,_242)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(242, 242, 242)"}}>(FOUNDERS TAPES)</p>
-                          </div>
-                          <div aria-label="STYLIST &amp; MAKE UP ARTIST" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(242,_242,_242)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(242, 242, 242)"}}>0</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="items-center flex grow h-min justify-end overflow-hidden relative w-px basis-0 gap-[10px] shrink-[0]">
-                  <div aria-label="Menu Button" className="aspect-square relative w-[10px] bg-[rgb(242,_242,_242)] shrink-[0] rounded-[100%]"></div>
-                </div>
-              </div>
-              <div aria-label="Nav Links" className="items-start flex h-min justify-center relative w-full gap-[0px] pt-0 pr-0 pb-10 pl-0 shrink-[0]">
-                <div className="items-start flex flex-col grow h-min justify-center relative w-px basis-0 gap-[0px] shrink-[0]">
-                  <div aria-label="Links" className="items-center flex h-min justify-center relative w-full gap-[5px] pt-[60px] pr-0 pb-0 pl-0 shrink-[0]">
-                    <div className="relative shrink-[0]">
-                      <div className="contents">
-                        <div aria-label="Offset" className="items-center flex size-min justify-center overflow-hidden relative gap-[10px]">
-                          <div className="items-center flex size-min justify-center relative gap-[10px] shrink-[0]">
-                            <div className="relative z-[1] shrink-[0] opacity-[0]">
-                              <a href="https://www.saascartel.com/" aria-label="Nav Link - Desktop" className="items-center flex h-min justify-center overflow-hidden relative w-[600px] text-[rgb(0,_0,_238)] gap-[4px]" style={{"textDecoration":"rgb(0, 0, 238)"}}>
-                                <div className="items-center flex flex-col justify-start relative w-min h-11 gap-[0px] shrink-[0]">
-                                  <div aria-label="Text LinK" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                                    <p className="text-left uppercase text-[rgb(20,_20,_20)] text-[50px] tracking-[-0.5px] leading-[45px]" style={{"fontFamily":"Baskervville, \"Baskervville Placeholder\", serif","textDecoration":"rgb(20, 20, 20)"}}></p>
-                                  </div>
-                                  <div aria-label="Text LinK" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                                    <p className="text-left uppercase text-[rgb(20,_20,_20)] text-[52px] tracking-[-0.52px] leading-[46.8px]" style={{"fontFamily":"Fahkwang, \"Fahkwang Placeholder\", sans-serif","textDecoration":"rgb(20, 20, 20)"}}></p>
-                                  </div>
-                                </div>
-                                <div className="relative shrink-[0]">
-                                  <div className="contents"></div>
-                                </div>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div aria-label="Links" className="items-end flex h-min justify-center relative w-full gap-[5px] pt-[7px] pr-0 pb-0 pl-0 shrink-[0]">
-                    <div className="relative shrink-[0]">
-                      <div className="contents">
-                        <div aria-label="Offset" className="items-center flex size-min justify-center overflow-hidden relative gap-[10px]">
-                          <div className="items-center flex size-min justify-center relative gap-[10px] shrink-[0]">
-                            <div className="relative z-[1] shrink-[0] opacity-[0]">
-                              <a href="https://timaxelsson.com/about-me" aria-label="Nav Link - Desktop" className="items-center flex h-min justify-center overflow-hidden relative w-[600px] text-[rgb(0,_0,_238)] gap-[4px]" style={{"textDecoration":"rgb(0, 0, 238)"}}>
-                                <div className="items-center flex flex-col justify-start relative w-min h-11 gap-[0px] shrink-[0]">
-                                  <div aria-label="Text LinK" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                                    <p className="text-left uppercase text-[rgb(20,_20,_20)] text-[50px] tracking-[-0.5px] leading-[45px]" style={{"fontFamily":"Baskervville, \"Baskervville Placeholder\", serif","textDecoration":"rgb(20, 20, 20)"}}></p>
-                                  </div>
-                                  <div aria-label="Text LinK" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                                    <p className="text-left uppercase text-[rgb(20,_20,_20)] text-[52px] tracking-[-0.52px] leading-[46.8px]" style={{"fontFamily":"Fahkwang, \"Fahkwang Placeholder\", sans-serif","textDecoration":"rgb(20, 20, 20)"}}></p>
-                                  </div>
-                                </div>
-                                <div className="relative shrink-[0]">
-                                  <div className="contents"></div>
-                                </div>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div aria-label="Links" className="items-end flex h-min justify-center relative w-full gap-[5px] pt-[7px] pr-0 pb-0 pl-0 shrink-[0]">
-                    <div className="relative shrink-[0]">
-                      <div className="contents">
-                        <div aria-label="Offset" className="items-center flex size-min justify-center overflow-hidden relative gap-[10px]">
-                          <div className="items-center flex size-min justify-center relative gap-[10px] shrink-[0]">
-                            <div className="relative z-[1] shrink-[0] opacity-[0]">
-                              <a href="https://timaxelsson.com/contact" aria-label="Nav Link - Desktop" className="items-center flex h-min justify-center overflow-hidden relative w-[600px] text-[rgb(0,_0,_238)] gap-[4px]" style={{"textDecoration":"rgb(0, 0, 238)"}}>
-                                <div className="items-center flex flex-col justify-start relative w-min h-11 gap-[0px] shrink-[0]">
-                                  <div aria-label="Text LinK" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                                    <p className="text-left uppercase text-[rgb(20,_20,_20)] text-[50px] tracking-[-0.5px] leading-[45px]" style={{"fontFamily":"Baskervville, \"Baskervville Placeholder\", serif","textDecoration":"rgb(20, 20, 20)"}}></p>
-                                  </div>
-                                  <div aria-label="Text LinK" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                                    <p className="text-left uppercase text-[rgb(20,_20,_20)] text-[52px] tracking-[-0.52px] leading-[46.8px]" style={{"fontFamily":"Fahkwang, \"Fahkwang Placeholder\", sans-serif","textDecoration":"rgb(20, 20, 20)"}}></p>
-                                  </div>
-                                </div>
-                                <div className="relative shrink-[0]">
-                                  <div className="contents"></div>
-                                </div>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div aria-label="Links" className="items-end flex h-min justify-center relative w-full gap-[5px] pt-[7px] pr-0 pb-0 pl-0 shrink-[0]">
-                    <div className="relative shrink-[0]">
-                      <div className="contents">
-                        <div aria-label="Offset" className="items-center flex size-min justify-center overflow-hidden relative gap-[10px]">
-                          <div className="items-center flex size-min justify-center relative gap-[10px] shrink-[0]">
-                            <div className="relative z-[1] shrink-[0] opacity-[0]">
-                              <a href="https://timaxelsson.com/newsletter" aria-label="Nav Link - Desktop" className="items-center flex h-min justify-center overflow-hidden relative w-[600px] text-[rgb(0,_0,_238)] gap-[4px]" style={{"textDecoration":"rgb(0, 0, 238)"}}>
-                                <div className="items-center flex flex-col justify-start relative w-min h-11 gap-[0px] shrink-[0]">
-                                  <div aria-label="Text LinK" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                                    <p className="text-left uppercase text-[rgb(20,_20,_20)] text-[50px] tracking-[-0.5px] leading-[45px]" style={{"fontFamily":"Baskervville, \"Baskervville Placeholder\", serif","textDecoration":"rgb(20, 20, 20)"}}></p>
-                                  </div>
-                                  <div aria-label="Text LinK" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                                    <p className="text-left uppercase text-[rgb(20,_20,_20)] text-[52px] tracking-[-0.52px] leading-[46.8px]" style={{"fontFamily":"Fahkwang, \"Fahkwang Placeholder\", sans-serif","textDecoration":"rgb(20, 20, 20)"}}></p>
-                                  </div>
-                                </div>
-                                <div className="relative shrink-[0]">
-                                  <div className="contents"></div>
-                                </div>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
+// Characters used for the scramble text effect
+const CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()";
 
-    </div>
-  )
+/**
+ * Reusable NavbarLink component that implements the Scramble Text animation
+ * and the right-side tag reveal on hover.
+ */
+const NavbarLink = ({ link }: { link: any }) => {
+   const [displayText, setDisplayText] = useState(link.label);
+   const [isHovered, setIsHovered] = useState(false);
+   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+   useEffect(() => {
+      let iteration = 0;
+
+      if (isHovered) {
+         clearInterval(intervalRef.current as NodeJS.Timeout);
+
+         intervalRef.current = setInterval(() => {
+            setDisplayText((prev: string) =>
+               link.label
+                  .split("")
+                  .map((letter: string, index: number) => {
+                     if (index < iteration) {
+                        return link.label[index];
+                     }
+                     if (link.label[index] === " ") return " ";
+                     return CHARACTERS[Math.floor(Math.random() * CHARACTERS.length)];
+                  })
+                  .join("")
+            );
+
+            if (iteration >= link.label.length) {
+               clearInterval(intervalRef.current as NodeJS.Timeout);
+            }
+
+            iteration += 1 / 3; // controls the speed/steps of scramble
+         }, 30);
+      } else {
+         clearInterval(intervalRef.current as NodeJS.Timeout);
+         setDisplayText(link.label);
+      }
+      return () => clearInterval(intervalRef.current as NodeJS.Timeout);
+   }, [isHovered, link.label]);
+
+   return (
+      <a
+         href={link.href}
+         className="group relative flex items-center justify-center h-[75px] w-full min-w-[500px] cursor-pointer"
+         onMouseEnter={() => setIsHovered(true)}
+         onMouseLeave={() => setIsHovered(false)}
+      >
+         <div className="relative flex items-center justify-center w-min">
+            {/* Scrambled Main Label in Baskervville */}
+            <span className="font-baskervville text-center uppercase text-[#141414] text-[65px] leading-[1] whitespace-nowrap">
+               {displayText}
+            </span>
+
+            {/* Tag reveal on the right side */}
+            {link.tag && (
+               <div
+                  className={`absolute left-[105%] flex items-center h-full transition-all duration-300 ease-out ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[10px]'
+                     }`}
+               >
+                  <span className="font-azeret text-[15px] font-medium tracking-tight whitespace-nowrap text-[#141414]">
+                     {link.tag}
+                  </span>
+               </div>
+            )}
+         </div>
+      </a>
+   )
 }
 
-export default navbar
+
+const Navbar = () => {
+   const { brand, subtitle, menuText, links } = globalData.navbar;
+   const [isOpen, setIsOpen] = useState(false);
+
+   return (
+      <div className="fixed inset-x-0 top-0 z-[10] shrink-[0]" style={{ "transform": "perspective(1200px)" }}>
+         <nav
+            className={`flex flex-col w-full overflow-hidden transition-all duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] ${isOpen
+                  ? 'bg-[#F2F2F2] text-[#141414] h-[450px]'
+                  : 'bg-[#141414] text-[#F2F2F2] h-[38px]'
+               }`}
+            onMouseLeave={() => setIsOpen(false)}
+         >
+            {/* Top Section */}
+            <div className="flex items-center justify-between w-full h-[38px] px-[10px] shrink-0">
+               {/* Brand Name */}
+               <div className="flex-1 flex justify-start">
+                  <a href="/" className="font-azeret text-[15px] leading-[18px] uppercase">
+                     {brand}
+                  </a>
+               </div>
+
+               {/* Subtitle / Menu Text */}
+               <div className="flex-1 flex justify-center">
+                  <p className="font-azeret text-[15px] leading-[18px] uppercase transition-all duration-300">
+                     {isOpen ? menuText : subtitle}
+                  </p>
+               </div>
+
+               {/* Menu Button (Dot) */}
+               <div className="flex-1 flex justify-end items-center pr-1 h-full">
+                  {/* Expanded click target for the dot so it's easier to hover */}
+                  <div
+                     className="w-[30px] h-full flex items-center justify-end cursor-pointer"
+                     onMouseEnter={() => setIsOpen(true)}
+                  >
+                     <div
+                        className={`aspect-square w-[10px] rounded-[100%] transition-colors duration-300 ${isOpen ? 'bg-[#141414]' : 'bg-[#F2F2F2]'
+                           }`}
+                     />
+                  </div>
+               </div>
+            </div>
+
+            {/* Links Section */}
+            <div
+               className={`flex flex-col items-center justify-center w-full grow pointer-events-none transition-all duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] ${isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-[20px]'
+                  }`}
+            >
+               <div className="flex flex-col items-center justify-center pt-2 pb-8">
+                  {links.map((link) => (
+                     <NavbarLink key={link.id} link={link} />
+                  ))}
+               </div>
+            </div>
+         </nav>
+      </div>
+   )
+}
+
+export default Navbar;
