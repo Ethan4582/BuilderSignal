@@ -1,9 +1,12 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { globalData } from "@/app/globaldata";
 import { HeroRow1 } from "./hero/HeroRow1";
 import { HeroRow2 } from "./hero/HeroRow2";
 import { HeroRow3 } from "./hero/HeroRow3";
 import { HeroRow4 } from "./hero/HeroRow4";
+import { WordRotate } from "@/src/components/word-rotate";
 
 const { hero } = globalData;
 const { heroRows, cta } = hero;
@@ -15,6 +18,8 @@ const row3Data = heroRows.find((r) => r.id === "row3") as any;
 const row4Data = heroRows.find((r) => r.id === "row4") as any;
 
 const Hero = () => {
+  const [ctaHovered, setCtaHovered] = useState(false);
+
   return (
     <section className="bg-[#141414] relative text-[12px] font-sans overflow-hidden w-full">
 
@@ -44,31 +49,32 @@ const Hero = () => {
 
       <div
         aria-label="CTA"
-        className="items-center flex flex-col h-min justify-center relative w-full gap-[10px] py-[150px] shrink-0 z-30 bg-[#141414] mt-[75vh]"
+        className="items-center flex flex-col h-min justify-center relative w-full gap-0 py-[150px] shrink-0 z-30 bg-[#141414] mt-[75vh]"
       >
         <div className="flex flex-col justify-start relative whitespace-pre shrink-0">
-          <p className="hero-tag text-[#F2F2F2]">{cta.tag}</p>
+          <p className="hero-tag text-[#F2F2F2] mb-1">{cta.tag}</p>
         </div>
 
         <div className="relative">
           <a
             href={cta.href}
             aria-label="CTA Desktop"
-            className="items-center flex flex-col h-min justify-center overflow-hidden relative w-[300px] md:w-[680px] text-[#0000EE] gap-[10px]"
+            className="hero-cta-link items-center flex flex-col h-min justify-center overflow-hidden relative w-max md:w-max mx-auto text-[#0000EE] gap-0"
+            onMouseEnter={() => setCtaHovered(true)}
+            onMouseLeave={() => setCtaHovered(false)}
           >
-            <div className="items-center flex h-min justify-center relative w-full gap-[10px] shrink-0">
+            <div className="items-center flex h-min justify-center relative w-full gap-0 shrink-0">
               <div className="relative shrink-0">
-                <div className="items-center flex flex-col justify-start relative w-min h-[52px] shrink-0">
-                  <p className="hero-cta-title text-[#F2F2F2] whitespace-pre z-[1] text-[8vw] md:text-[52px]">
-                    {cta.headline}
-                  </p>
+                <div className="hero-cta-underline-wrapper items-center flex flex-col justify-start relative w-min h-[60px] md:h-[80px] shrink-0">
+                  <WordRotate
+                    words={[cta.headline, cta.headline]}
+                    isHovered={ctaHovered}
+                    height={80}
+                    duration={0.8}
+                    className="hero-cta-title text-[#F2F2F2] whitespace-nowrap !text-[32px] md:!text-[52px]"
+                  />
                 </div>
               </div>
-            </div>
-
-            <div className="items-center flex h-px justify-start relative w-full gap-[16px] shrink-0">
-              <div className="items-center flex justify-center overflow-hidden absolute w-[100%] md:w-[628px] top-0 right-[100%] md:right-[1000px] bottom-0 bg-[#F2F2F2] gap-[10px] pr-[100px] z-[1] shrink-0" />
-              <div className="overflow-hidden absolute inset-0 bg-[#F2F2F2] z-[1] shrink-0" />
             </div>
           </a>
         </div>

@@ -208,8 +208,23 @@
 }
 
 .hero-cta-title {
-   @apply text-center uppercase text-[52px] leading-[52px];
+   @apply text-center uppercase text-[58px] leading-[52px] relative cursor-pointer inline-block;
    font-family: 'Baskervville', serif;
+}
+
+/* Underline logic for the CTA wrapper */
+.hero-cta-underline-wrapper {
+   @apply relative inline-block;
+}
+
+.hero-cta-underline-wrapper::after {
+   content: '';
+   @apply absolute bottom-[-4px] left-0 w-0 h-[2px] bg-[#F2F2F2];
+   transition: width 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.hero-cta-link:hover .hero-cta-underline-wrapper::after {
+   @apply w-full;
 }
 
 .hero-mono-desc {
