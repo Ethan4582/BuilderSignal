@@ -8,7 +8,7 @@ import { HeroRow4 } from "./hero/HeroRow4";
 const { hero } = globalData;
 const { heroRows, cta } = hero;
 
-// Ensure type safety via casting from globalData
+
 const row1Data = heroRows.find((r) => r.id === "row1") as any;
 const row2Data = heroRows.find((r) => r.id === "row2") as any;
 const row3Data = heroRows.find((r) => r.id === "row3") as any;
@@ -17,10 +17,10 @@ const row4Data = heroRows.find((r) => r.id === "row4") as any;
 const Hero = () => {
   return (
     <section className="bg-[#141414] relative text-[12px] font-sans overflow-hidden w-full">
-      {/* ── ROW 1 to 4: CSS Grid layout with sticky header underneath ── */}
+     
       <div className="relative w-full z-10">
 
-        {/* The sticky giant brand name banner */}
+      
         <div className="absolute top-0 left-0 right-0 h-[200vh] pointer-events-none z-0">
           <div className="sticky top-0 h-[85vh] flex flex-col items-center justify-end pb-[24px] pointer-events-auto">
             <h1
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Rows wrapper to overlap the sticky text correctly */}
+     
         <div className="relative z-20 top-[85vh]">
           {row1Data && <HeroRow1 data={row1Data} />}
           {row2Data && <HeroRow2 data={row2Data} />}
@@ -41,7 +41,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* ── CTA strip ──────────────────────────────────────────── */}
+    
       <div
         aria-label="CTA"
         className="items-center flex flex-col h-min justify-center relative w-full gap-[10px] py-[150px] shrink-0 z-30 bg-[#141414] mt-[85vh]"
@@ -56,7 +56,7 @@ const Hero = () => {
             aria-label="CTA Desktop"
             className="items-center flex flex-col h-min justify-center overflow-hidden relative w-[300px] md:w-[680px] text-[#0000EE] gap-[10px]"
           >
-            {/* headline */}
+          
             <div className="items-center flex h-min justify-center relative w-full gap-[10px] shrink-0">
               <div className="relative shrink-0">
                 <div className="items-center flex flex-col justify-start relative w-min h-[52px] shrink-0">
@@ -67,7 +67,7 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* underline decorators */}
+         
             <div className="items-center flex h-px justify-start relative w-full gap-[16px] shrink-0">
               <div className="items-center flex justify-center overflow-hidden absolute w-[100%] md:w-[628px] top-0 right-[100%] md:right-[1000px] bottom-0 bg-[#F2F2F2] gap-[10px] pr-[100px] z-[1] shrink-0" />
               <div className="overflow-hidden absolute inset-0 bg-[#F2F2F2] z-[1] shrink-0" />
