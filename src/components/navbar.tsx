@@ -49,7 +49,7 @@ const Navbar = () => {
 
             {/* Links Section */}
             <div
-               className={`flex flex-col items-center justify-center w-full grow pointer-events-none transition-all duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] ${isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-[20px]'
+               className={`flex flex-col items-center justify-center w-full grow transition-all duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] ${isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-[20px] pointer-events-none'
                   }`}
             >
                <div className="flex flex-col items-center justify-center pt-3 pb-8">

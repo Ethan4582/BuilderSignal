@@ -13,72 +13,44 @@ interface NavbarLinkProps {
    link: Link;
 }
 
-/**
- * NavbarLink with the exact same text-hover animation
- * used in the hero section (HeroRow2 glass panel style).
- * Pure CSS translateY + opacity flip — no WordRotate wrapper needed.
- */
 const NavbarLink = ({ link }: NavbarLinkProps) => {
    const [isHovered, setIsHovered] = useState(false)
-
-   const textStyle: React.CSSProperties = {
-      fontFamily: "'Baskervville', serif",
-      fontWeight: 400,
-   }
-
-   const tagStyle: React.CSSProperties = {
-      fontFamily: "'Azeret Mono', monospace",
-   }
 
    return (
       <a
          href={link.href}
-         className="relative flex items-center justify-center w-full min-w-[500px] cursor-pointer"
+         className="group relative flex items-center justify-center w-full min-w-[500px] cursor-pointer"
          onMouseEnter={() => setIsHovered(true)}
          onMouseLeave={() => setIsHovered(false)}
       >
          <div className="relative flex items-center justify-center w-min">
 
-            {/* Text flip container — same approach as HeroRow2 glass panel */}
-            <div className="overflow-hidden relative h-[55px] flex justify-center items-center">
-               {/* Default text — slides up and out on hover */}
+            {/* Simple label with an underline hover animation */}
+            <div className="relative flex justify-center items-center h-[55px]">
                <p
-                  className="text-center uppercase text-[#141414] text-[48px] leading-[55px] whitespace-nowrap px-1 transition-all duration-500"
+                  className="relative text-center uppercase text-[#141414] text-[48px] whitespace-nowrap px-1 inline-block
+                             after:content-[''] after:absolute after:bottom-[8px] after:left-[4px] after:right-[4px] after:h-[3px] 
+                             after:bg-[#141414] after:origin-left after:scale-x-0 group-hover:after:scale-x-100 
+                             after:transition-transform after:duration-300 after:ease-out"
                   style={{
-                     ...textStyle,
-                     transform: isHovered ? 'translateY(-55px)' : 'translateY(0)',
-                     opacity: isHovered ? 0 : 1,
-                  }}
-               >
-                  {link.label}
-               </p>
-
-               {/* Hover text — slides up into view from below */}
-               <p
-                  className="absolute text-center uppercase text-[#141414] text-[48px] leading-[55px] whitespace-nowrap px-1 transition-all duration-500"
-                  style={{
-                     ...textStyle,
-                     transform: isHovered ? 'translateY(0)' : 'translateY(55px)',
-                     opacity: isHovered ? 1 : 0,
+                     fontFamily: "'Baskervville', serif",
+                     fontWeight: 400,
+                     lineHeight: '55px',
                   }}
                >
                   {link.label}
                </p>
             </div>
 
-            {/* Tag reveal on hover — right side */}
+            {/* Tag — slides up & fades in on hover (unchanged) */}
             {link.tag && (
                <div
-                  className="absolute left-[100%] ml-3 flex items-center h-full"
-                  style={{
-                     transition: 'all 400ms cubic-bezier(0.76, 0, 0.24, 1)',
-                     opacity: isHovered ? 1 : 0,
-                     transform: isHovered ? 'translateY(0)' : 'translateY(10px)',
-                  }}
+                  className="absolute left-[100%] ml-3 flex items-center translate-y-[10px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-[transform,opacity] duration-300 ease-[cubic-bezier(0.76,0,0.24,1)]"
+                  style={{ height: '55px' }}
                >
                   <span
                      className="text-[13px] font-medium tracking-wide whitespace-nowrap text-[#141414]"
-                     style={tagStyle}
+                     style={{ fontFamily: "'Azeret Mono', monospace" }}
                   >
                      {link.tag}
                   </span>
