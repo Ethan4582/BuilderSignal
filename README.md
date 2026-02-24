@@ -1,51 +1,39 @@
-# Astra — Minimalist Agency/Portfolio Template
+# BuilderSignal — The Founder's Journey
 
-![Astra Preview](public/assets/hero.png)
-
-![Work Preview](public/assets/Work.png)
-
-![Features Preview](public/assets/feature.png)
-
-![About Preview](public/assets/about.png)
-
-![Services Preview](public/assets/services.png)
-
-![Footer Preview](public/assets/footer1.png)
+![Hero Preview](public/assets/hero.png)
 
 ## Overview
 
-Astra is a curated digital experience crafted for agencies and freelancers. It prioritizes clean typography, ample whitespace, and sophisticated motion design to showcase creative work with impact.
+BuilderSignal is a premium, high-performance personal brand and portfolio template designed for founders, creators, and entrepreneurs. It features an exquisite minimalist dark mode aesthetic, fluid CSS animations, and precise typography to showcase the reality of execution, building SaaS (like SaaS Cartel), and sharing startup insights.
 
-**Tech Stack:** Next.js (App Router) • React • Tailwind CSS • Framer Motion • GSAP • Lenis (Smooth Scroll)
+**Tech Stack:** Next.js (App Router) • React • Tailwind CSS • Framer Motion
 
-⚠️ **IMPORTANT NOTICE:** This project is **NOT** a template for sale. It is completely free and open-source. Please ensure you provide proper credit to the original creators and developers when using or sharing this codebase.
-
-
+⚠️ **IMPORTANT NOTICE:** This project is completely free and open-source. Please ensure you provide proper credit to the original creators and developers when using or sharing this codebase.
 
 ## Getting Started
 
 1. Clone the repository
 ```bash
-git clone https://github.com/Ethan4582/Astra
+git clone https://github.com/Ethan4582/BuilderSignal
 ```
 
 2. Install dependencies
 ```bash
-npm install
+pnpm install
+# or npm install
 ```
 
 3. Run the development server
 ```bash
-npm run dev
+pnpm dev
+# or npm run dev
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Credits
 
-**Inspired by:** [Slate Department](https://slate-department.webflow.io/)
-
-This project is a custom Next.js implementation developed to provide a high-performance, open-source version of the Astra landing page design.
+This project is a custom Next.js implementation developed to provide a high-performance, open-source personal brand landing page. It draws inspiration from modern minimalist architecture and bespoke agency designs.
 
 ## Developer
 

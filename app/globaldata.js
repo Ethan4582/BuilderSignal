@@ -1,13 +1,13 @@
 export const globalData = {
    navbar: {
-      brand: "NOAH BENNETT",
+      brand: "MAX SULLIVAN",
       subtitle: "(FOUNDERS TAPES)",
       menuText: "(MENU)",
       links: [
-         { id: 1, label: "COMMUNITY", href: "https://www.saascartel.com/", tag: "(SAAS CARTEL)" },
-         { id: 2, label: "ABOUT ME", href: "https://timaxelsson.com/about-me", tag: "(ABOUT)" },
-         { id: 3, label: "GET IN TOUCH", href: "https://timaxelsson.com/contact", tag: "(CONTACT)" },
-         { id: 4, label: "NEWSLETTER", href: "https://timaxelsson.com/newsletter", tag: "" },
+         { id: 1, label: "COMMUNITY", href: "/", tag: "(SAAS CARTEL)" },
+         { id: 2, label: "ABOUT ME", href: "/about-me", tag: "(ABOUT)" },
+         { id: 3, label: "GET IN TOUCH", href: "https://x.com/SinghAshir65848", tag: "(CONTACT)" },
+         { id: 4, label: "NEWSLETTER", href: "/", tag: "NOTIFY" },
       ],
    },
 
@@ -22,7 +22,7 @@ export const globalData = {
                title: 'YOUTUBE',
                hoverTitle: "FOUNDER'S TAPES",
                desc: 'THE UNSCRIPTED DOCUMENTARY, IN THE LIFE OF BUILDING AN EMPIRE',
-               href: 'https://www.youtube.com/@bytimaxelsson'
+               href: '/'
             },
             right: {
                image: 'https://framerusercontent.com/images/qfMh25xXaX3vffDT2mdLs3AZ9so.jpg' // Placeholder since Firebase 401s
@@ -34,8 +34,8 @@ export const globalData = {
                image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&q=80',
                glassTitle: 'SAAS CARTEL',
                hoverTitle: 'JOIN THE WAITLIST',
-               badge: 'Soon – Launch in Q3 2025',
-               href: 'https://www.saascartel.com/'
+               badge: 'Soon – Launch in Q1 2026',
+               href: '/'
             },
             right: {
                bg: '#141414',
@@ -50,7 +50,7 @@ export const globalData = {
             left: {
                bg: '#FFFAED',
                tag: '(ABOUT)',
-               bio: 'NOAH BENNETT IS AN ENTREPRENEUR DRAWN TO THE CRAFT OF BUILDING. A DECADE OF SHAPING VENTURES WAS THE GROUNDWORK—NOW BUILDING WITH FOCUS, THE FOUNDATION OF AN EMPIRE.',
+               bio: 'MAX SULLIVAN IS A CREATOR COMMITTED TO THE REALITY OF EXECUTION. TEN YEARS OF DEVELOPING PROJECTS FORMED THE BASE—TODAY, HE BUILDS WITH TARGETED INTENT, LAYING THE BRICKS FOR A LASTING LEGACY.',
                photos: [
                   'https://framerusercontent.com/images/L7RaBogFmJfOp4nzs7sLPcL9hI.jpg?scale-down-to=1024',
                   'https://framerusercontent.com/images/eUAb5nMvCfGj2ep4jmGnCaPD7GA.jpg?scale-down-to=1024'
@@ -79,7 +79,7 @@ export const globalData = {
       cta: {
          tag: "(reach out)",
          headline: "Let's build together",
-         href: "https://timaxelsson.com/contact"
+         href: "/"
       }
    }
 };

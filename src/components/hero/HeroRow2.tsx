@@ -35,25 +35,25 @@ export function HeroRow2({ data }: HeroRow2Props) {
             <img src={data.left.image} alt="Background" className="hero-media-fill" />
 
             {/* Glass panel */}
-            <div className="glass-panel pb-12 md:p-16 w-[90%] md:w-[480px] aspect-square gap-10 md:gap-16">
+            <div className="glass-panel flex flex-col justify-between w-[90%] md:w-[480px] aspect-square py-12 md:py-14">
 
                {/* Badge Pill */}
                <div className="soon-badge">
                   <span className="bg-[#F8A80E] text-[#141414] px-3 md:px-4 py-1 rounded-full uppercase tracking-wider">
                      Soon
                   </span>
-                  <span className="whitespace-nowrap">Launch in Q3 2025</span>
+                  <span className="whitespace-nowrap font-azeret">Launch in Q3 2025</span>
                </div>
 
                {/* Center Dark Square */}
-               <div className="bg-[#141414] text-[#F2F2F2] rounded-[32px] w-[180px] h-[180px] md:w-[220px] md:h-[220px] flex flex-col items-center justify-center p-6 shadow-xl shrink-0">
+               <div className="bg-[#141414] text-[#F2F2F2] rounded-[38px] w-[180px] h-[180px] md:w-[220px] md:h-[220px] flex flex-col items-center justify-center p-6 shadow-2xl shrink-0 border border-white/5">
                   <p className="hero-serif-xl !text-[36px] md:!text-[44px] text-center leading-[1.1] tracking-tight">
                      <span className="italic font-normal">SaaS</span><br />CARTEL
                   </p>
                </div>
 
                {/* Bottom Text */}
-               <p className="hero-serif-xl !text-[28px] md:!text-[36px] text-white tracking-wide shrink-0">
+               <p className="font-baskervville !font-normal !text-[28px] md:!text-[40px] text-white tracking-wide shrink-0">
                   Join the waitlist
                </p>
             </div>
