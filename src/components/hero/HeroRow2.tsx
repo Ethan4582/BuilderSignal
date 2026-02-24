@@ -35,10 +35,10 @@ export function HeroRow2({ data }: HeroRow2Props) {
             <img src={data.left.image} alt="Background" className="hero-media-fill" />
 
             {/* Glass panel */}
-            <div className="relative z-10 flex flex-col items-center justify-center pb-12 md:p-16 backdrop-blur-2xl bg-[#D6CDC2]/20 rounded-[48px] w-[90%] md:w-[480px] aspect-square border border-white/5 shadow-2xl gap-10 md:gap-16">
+            <div className="glass-panel pb-12 md:p-16 w-[90%] md:w-[480px] aspect-square gap-10 md:gap-16">
 
                {/* Badge Pill */}
-               <div className="flex items-center bg-[#141414] text-[#F8A80E] text-[12px] md:text-[14px] font-semibold p-1 pr-5 rounded-full gap-2 md:gap-3 shrink-0">
+               <div className="soon-badge">
                   <span className="bg-[#F8A80E] text-[#141414] px-3 md:px-4 py-1 rounded-full uppercase tracking-wider">
                      Soon
                   </span>
@@ -48,7 +48,7 @@ export function HeroRow2({ data }: HeroRow2Props) {
                {/* Center Dark Square */}
                <div className="bg-[#141414] text-[#F2F2F2] rounded-[32px] w-[180px] h-[180px] md:w-[220px] md:h-[220px] flex flex-col items-center justify-center p-6 shadow-xl shrink-0">
                   <p className="hero-serif-xl !text-[36px] md:!text-[44px] text-center leading-[1.1] tracking-tight">
-                     <span className="italic">SaaS</span><br />CARTEL
+                     <span className="italic font-normal">SaaS</span><br />CARTEL
                   </p>
                </div>
 
@@ -76,8 +76,7 @@ export function HeroRow2({ data }: HeroRow2Props) {
                   words={["SAAS\nCARTEL", "COMMUNITY"]}
                   isHovered={hovered}
                   height={180}
-                  className="italic text-[#F2F2F2] whitespace-pre-wrap text-[40px] md:text-[60px] lg:text-[75px] leading-tight"
-                  style={{ fontFamily: "'Baskervville'" }}
+                  className="font-baskervville italic text-[#F2F2F2] whitespace-pre-wrap text-[40px] md:text-[60px] lg:text-[75px] leading-tight"
                />
             </div>
 

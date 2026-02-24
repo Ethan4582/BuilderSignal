@@ -23,15 +23,13 @@ const Hero = () => {
   return (
     <section className="bg-[#141414] relative text-[12px] font-sans overflow-hidden w-full">
 
+
       <div className="relative w-full z-10">
 
 
         <div className="absolute top-0 left-0 right-0 h-[200vh] pointer-events-none z-0">
-          <div className="sticky top-0 h-[86vh] flex flex-col items-center justify-end pb-[50px] pointer-events-auto">
-            <h1
-              className="font-semibold text-center uppercase text-[#F2F2F2] text-[12vw] leading-none"
-              style={{ fontFamily: "'Baskervville', serif" }}
-            >
+          <div className="sticky top-0 h-[86vh] flex flex-col items-center justify-end pb-12 pointer-events-auto">
+            <h1 className="font-baskervville font-semibold text-center uppercase text-[#F2F2F2] text-[12vw] leading-none">
               {hero.brandName}
             </h1>
           </div>
@@ -65,7 +63,7 @@ const Hero = () => {
           >
             <div className="items-center flex h-min justify-center relative w-full gap-0 shrink-0">
               <div className="relative shrink-0">
-                <div className="hero-cta-underline-wrapper items-center flex flex-col justify-start relative w-min h-[60px] md:h-[80px] shrink-0">
+                <div className="hero-cta-underline-wrapper items-center flex flex-col justify-start relative w-min h-20 shrink-0">
                   <WordRotate
                     words={[cta.headline, cta.headline]}
                     isHovered={ctaHovered}

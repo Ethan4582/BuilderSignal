@@ -51,7 +51,7 @@ export function HeroRow4({ data }: HeroRow4Props) {
                   words={["LEDGER", "NEWSLETTER"]}
                   isHovered={hovered}
                   height={80}
-                  className="hero-serif-lg text-[#D7D1D0] italic text-[32px] md:text-[40px]"
+                  className="hero-serif-lg font-baskervville text-[#D7D1D0] italic text-[32px] md:text-[40px]"
                />
             </div>
          </a>

@@ -3,18 +3,18 @@ import { globalData } from '@/app/globaldata';
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#141414] overflow-hidden flex flex-col items-center pt-10 pb-6 px-4 md:px-10 z-20 relative -mt-1">
+    <footer className="w-full bg-[#141414] overflow-hidden flex flex-col items-center pt-10 pb-1 px-4 md:px-10 z-20 relative -mt-1">
 
       {/* Brand Text */}
-      <div className="w-full flex justify-center items-center py-6 md:py-10">
+      <div className="w-full flex justify-center items-center pt-6 md:pt-10 pb-0">
         <h1 className="font-baskervville text-[#FFAC16] text-[11.5vw] uppercase leading-none whitespace-nowrap tracking-tight">
-          <span className="italic pr-2 md:pr-4">BY</span>
+          <span className="italic pr-1">BY</span>
           {globalData.hero.brandName}
         </h1>
       </div>
 
       {/* Bottom Links */}
-      <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0 mt-6 md:mt-10 mb-2">
+      <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0 mt-2 md:mt-4 mb-2">
         {/* Left */}
         <div className="text-left w-full md:w-1/4 flex justify-center md:justify-start">
           <a href="https://ena.supply/" className="footer-link">POWERED BY FOUR CLOVER</a>

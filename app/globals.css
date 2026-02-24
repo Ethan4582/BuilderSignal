@@ -145,6 +145,14 @@
       @apply text-[#FFAC16] uppercase text-[15px] hover:text-white transition-colors duration-300;
       font-family: "Azeret Mono", monospace;
    }
+
+   .glass-panel {
+      @apply relative z-10 flex flex-col items-center justify-center backdrop-blur-2xl bg-[#D6CDC2]/20 rounded-[48px] border border-white/5 shadow-2xl;
+   }
+
+   .soon-badge {
+      @apply flex items-center bg-[#141414] text-[#F8A80E] text-[14px] font-semibold p-1 pr-5 rounded-full gap-3 shrink-0;
+   }
 }
 
 /* ── Hero shared utilities ─────────────────────────────── */
