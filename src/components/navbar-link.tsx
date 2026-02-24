@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import { WordRotate } from './word-rotate'
 
 interface Link {
    id: number;
@@ -23,26 +24,22 @@ const NavbarLink = ({ link }: NavbarLinkProps) => {
          onMouseEnter={() => setIsHovered(true)}
          onMouseLeave={() => setIsHovered(false)}
       >
-         <div className="relative flex items-center justify-center w-min">
+         <div className="relative flex items-center justify-center w-min h-[55px]">
 
-            {/* Simple label with an underline hover animation */}
-            <div className="relative flex justify-center items-center h-[55px]">
-               <p
-                  className="relative text-center uppercase text-[#141414] text-[48px] whitespace-nowrap px-1 inline-block
-                             after:content-[''] after:absolute after:bottom-[8px] after:left-[4px] after:right-[4px] after:h-[3px] 
-                             after:bg-[#141414] after:origin-left after:scale-x-0 group-hover:after:scale-x-100 
-                             after:transition-transform after:duration-300 after:ease-out"
-                  style={{
-                     fontFamily: "'Baskervville', serif",
-                     fontWeight: 400,
-                     lineHeight: '55px',
-                  }}
-               >
-                  {link.label}
-               </p>
-            </div>
+            {/* Implemented EXACTLY like the "youtube" text in hero section row 1 */}
+            <WordRotate
+               words={[link.label, link.label]}
+               isHovered={isHovered}
+               height={55}
+               className="text-center uppercase text-[#141414] text-[48px] whitespace-nowrap px-1"
+               style={{
+                  fontFamily: "'Baskervville', serif",
+                  fontWeight: 400,
+                  lineHeight: '55px',
+               }}
+            />
 
-            {/* Tag — slides up & fades in on hover (unchanged) */}
+            {/* Tag — slides up & fades in on hover */}
             {link.tag && (
                <div
                   className="absolute left-[100%] ml-3 flex items-center translate-y-[10px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-[transform,opacity] duration-300 ease-[cubic-bezier(0.76,0,0.24,1)]"
