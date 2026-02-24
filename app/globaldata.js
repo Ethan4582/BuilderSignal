@@ -25,7 +25,7 @@ export const globalData = {
                href: 'https://www.youtube.com/@bytimaxelsson'
             },
             right: {
-               video: 'https://cdn.pixabay.com/video/2021/08/04/83896-584732177_large.mp4' // Placeholder since Firebase 401s
+               image: 'https://framerusercontent.com/images/qfMh25xXaX3vffDT2mdLs3AZ9so.jpg' // Placeholder since Firebase 401s
             }
          },
          {
@@ -52,20 +52,20 @@ export const globalData = {
                tag: '(ABOUT)',
                bio: 'TIM AXELSSON IS AN ENTREPRENEUR DRAWN TO THE CRAFT OF BUILDING. A DECADE OF SHAPING VENTURES WAS THE GROUNDWORK—NOW BUILDING WITH FOCUS, THE FOUNDATION OF AN EMPIRE.',
                photos: [
-                  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
-                  'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80'
+                  'https://framerusercontent.com/images/L7RaBogFmJfOp4nzs7sLPcL9hI.jpg?scale-down-to=1024',
+                  'https://framerusercontent.com/images/eUAb5nMvCfGj2ep4jmGnCaPD7GA.jpg?scale-down-to=1024'
                ],
                href: 'https://timaxelsson.com/about-me'
             },
             right: {
-               video: 'https://cdn.pixabay.com/video/2019/02/13/21356-317135069_large.mp4' // Placeholder
+               video: 'https://framerusercontent.com/assets/oHeYHSdmyP62ztCVd9CwLKmXkZ0.mp4' // Placeholder
             }
          },
          {
             id: 'row4',
             left: {
                video: 'https://cdn.pixabay.com/video/2020/05/11/38600-418701968_large.mp4',
-               image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=900&q=80'
+               image: 'https://framerusercontent.com/images/EbLAFisNfpGqXz5JKvJzjvyOTSk.jpeg'
             },
             right: {
                bg: '#3D3D3D',

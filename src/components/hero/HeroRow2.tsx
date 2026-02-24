@@ -30,58 +30,59 @@ export function HeroRow2({ data }: HeroRow2Props) {
          {/* Left Column - Image with Glass Panel */}
          <a
             href={data.left.href}
-            className="hero-col hero-col-image cursor-pointer flex justify-center items-center"
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
+            className="hero-col hero-col-image cursor-pointer flex justify-center  items-center"
          >
             <img src={data.left.image} alt="Background" className="hero-media-fill" />
 
             {/* Glass panel */}
-            <div className="relative z-10 flex flex-col items-center justify-between p-8 backdrop-blur-md bg-black/40 rounded-2xl w-[80%] max-w-sm aspect-square border border-white/10 overflow-hidden group">
+            <div className="relative z-10 flex flex-col items-center justify-center pb-12 md:p-16 backdrop-blur-2xl bg-[#D6CDC2]/20 rounded-[48px] w-[90%] md:w-[480px] aspect-square border border-white/5 shadow-2xl gap-10 md:gap-16">
 
-               <div className="bg-amber-500/90 text-black text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">
-                  {data.left.badge}
+               {/* Badge Pill */}
+               <div className="flex items-center bg-[#141414] text-[#F8A80E] text-[12px] md:text-[14px] font-semibold p-1 pr-5 rounded-full gap-2 md:gap-3 shrink-0">
+                  <span className="bg-[#F8A80E] text-[#141414] px-3 md:px-4 py-1 rounded-full uppercase tracking-wider">
+                     Soon
+                  </span>
+                  <span className="whitespace-nowrap">Launch in Q3 2025</span>
                </div>
 
-               <div className="bg-[#141414] text-[#F2F2F2] rounded-xl w-32 h-32 flex items-center justify-center p-4">
-                  <p className="hero-serif-xl !text-3xl text-center leading-tight whitespace-pre-wrap">
-                     SAAS{"\n"}CARTEL
+               {/* Center Dark Square */}
+               <div className="bg-[#141414] text-[#F2F2F2] rounded-[32px] w-[180px] h-[180px] md:w-[220px] md:h-[220px] flex flex-col items-center justify-center p-6 shadow-xl shrink-0">
+                  <p className="hero-serif-xl !text-[36px] md:!text-[44px] text-center leading-[1.1] tracking-tight">
+                     <span className="italic">SaaS</span><br />CARTEL
                   </p>
                </div>
 
-               <div className="overflow-hidden relative h-10 w-full flex justify-center items-center">
-                  <p className={`hero-serif-xl !text-2xl text-white transition-transform duration-500 ${hovered ? '-translate-y-12 opacity-0' : 'translate-y-0 opacity-100'}`}>
-                     {data.left.glassTitle}
-                  </p>
-                  <p className={`hero-serif-xl !text-2xl text-white absolute transition-transform duration-500 ${hovered ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
-                     {data.left.hoverTitle}
-                  </p>
-               </div>
+               {/* Bottom Text */}
+               <p className="hero-serif-xl !text-[28px] md:!text-[36px] text-white tracking-wide shrink-0">
+                  Join the waitlist
+               </p>
             </div>
          </a>
 
          {/* Right Column - Dark Card */}
          <div
-            className="hero-col hero-col-dark"
+            className="hero-col hero-col-dark cursor-pointer"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
          >
             <div className="flex justify-center w-full">
-               <p className="hero-tag opacity-70">
+               <p className="hero-tag opacity-70 cursor-default">
                   {data.right.tag}
                </p>
             </div>
 
             <div className="flex justify-center items-center flex-grow w-full">
                <WordRotate
-                  words={[data.right.title, data.right.hoverTitle]}
+                  words={["SAAS\nCARTEL", "COMMUNITY"]}
                   isHovered={hovered}
-                  className="hero-serif-xl"
+                  height={180}
+                  className="italic text-[#F2F2F2] whitespace-pre-wrap text-[40px] md:text-[60px] lg:text-[75px] leading-tight"
+                  style={{ fontFamily: "'Fahkwang', sans-serif" }}
                />
             </div>
 
             <div className="flex justify-center w-full">
-               <p className="hero-mono-desc max-w-[80%] opacity-50">
+               <p className="hero-mono-desc max-w-[80%] opacity-50 cursor-default">
                   {data.right.desc}
                </p>
             </div>

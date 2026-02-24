@@ -26,18 +26,7 @@ export function HeroRow4({ data }: HeroRow4Props) {
       <div className="hero-section">
          {/* Left Column - Video/Image */}
          <div className="hero-col hero-col-image">
-            {data.left.video ? (
-               <video
-                  src={data.left.video}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="hero-media-fill"
-               />
-            ) : (
                <img src={data.left.image} className="hero-media-fill" alt="Newsletter Visual" />
-            )}
          </div>
 
          {/* Right Column - Charcoal Card (Ledger/Newsletter) */}

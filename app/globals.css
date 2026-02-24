@@ -162,12 +162,12 @@
 
 /* CSS Grid Section */
 .hero-section {
-   @apply grid grid-cols-1 md:grid-cols-2 w-full relative z-10;
+   @apply grid grid-cols-1 md:grid-cols-2 w-full relative z-10 gap-[16px];
 }
 
 /* Base column style */
 .hero-col {
-   @apply relative flex flex-col justify-between overflow-hidden min-h-[72vh] p-8 w-full;
+   @apply relative flex flex-col justify-between overflow-hidden min-h-[92vh] p-8 w-full rounded-2xl;
 }
 
 /* Color variants */
@@ -188,7 +188,7 @@
 }
 
 .hero-col-image {
-   @apply p-0 overflow-hidden relative min-h-[72vh];
+   @apply p-0 overflow-hidden relative min-h-[92vh];
 }
 
 /* Typography */

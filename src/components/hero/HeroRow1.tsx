@@ -14,7 +14,7 @@ interface HeroRow1Props {
          href: string;
       };
       right: {
-         video: string;
+         image: string;
       };
    };
 }
@@ -52,14 +52,11 @@ export function HeroRow1({ data }: HeroRow1Props) {
             </div>
          </a>
 
-         {/* Right Column - Video */}
+         {/* Right Column - Image */}
          <div className="hero-col hero-col-image">
-            <video
-               src={data.right.video}
-               autoPlay
-               muted
-               loop
-               playsInline
+            <img
+               src={data.right.image}
+               alt="hero section img"
                className="hero-media-fill"
             />
          </div>
