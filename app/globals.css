@@ -140,6 +140,11 @@
       @apply text-left uppercase text-[#141414] text-[52px] tracking-[-0.52px] leading-[46.8px];
       font-family: 'Fahkwang', sans-serif;
    }
+
+   .footer-link {
+      @apply text-[#FFAC16] uppercase text-[15px] hover:text-white transition-colors duration-300;
+      font-family: "Azeret Mono", monospace;
+   }
 }
 
 /* ── Hero shared utilities ─────────────────────────────── */

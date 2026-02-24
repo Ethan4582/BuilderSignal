@@ -1,119 +1,46 @@
-import React from 'react'
+import React from 'react';
+import { globalData } from '@/app/globaldata';
 
-const footer = () => {
+const Footer = () => {
   return (
-    <div>
+    <footer className="w-full bg-[#141414] overflow-hidden flex flex-col items-center pt-10 pb-6 px-4 md:px-10 z-20 relative -mt-1">
 
-       <div aria-label="Footer" className="items-center flex flex-col h-min justify-center overflow-hidden relative w-full gap-[10px] pt-5 pr-[10px] pb-5 pl-[10px]">
-              <div aria-label="Edward Hugo" className="flex flex-col justify-start overflow-hidden relative whitespace-pre w-full shrink-[0]">
-                <img src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F4a204711d20256d7a75c7f0c66dcf1b39b251f4a.svg?generation=1771885061817265&amp;alt=media" className="flex size-full" />
-                <div className="flex flex-col justify-start overflow-hidden absolute w-[79%] left-0 top-0 right-0 bottom-0 origin-[0px_0px] shrink-[0]" style={{"scale":"1.264"}}>
-                  <p className="font-medium text-left uppercase text-[rgb(255,_172,_22)] text-[120.929px] leading-[120.929px]" style={{"fontFamily":"Baskervville, \"Baskervville Placeholder\", serif","textDecoration":"rgb(255, 172, 22)"}}><span className="italic font-normal text-left uppercase">BY</span>TIM AXELSSON</p>
-                </div>
-              </div>
-              <div aria-label="Bottom Wrapper" className="items-center flex h-min justify-center overflow-hidden relative w-full gap-[10px] pt-0 pr-[9px] pb-0 pl-3 shrink-[0]">
-                <div className="items-center flex h-min justify-start overflow-hidden relative w-px basis-0 gap-[10px] grow-[0.3] shrink-[0]">
-                  <div className="relative shrink-[0]">
-                    <div className="contents">
-                      <div aria-label="Footer Link" className="items-center flex size-min justify-center overflow-hidden relative gap-[10px]">
-                        <a href="https://ena.supply/" className="items-center flex flex-col justify-start overflow-hidden relative w-min h-[17px] text-[rgb(0,_0,_238)] gap-[0px] shrink-[0]" style={{"textDecoration":"rgb(0, 0, 238)"}}>
-                          <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}>POWERED BY FOUR CLOVER</p>
-                          </div>
-                          <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}></p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="items-center flex h-min justify-start overflow-hidden relative w-px basis-0 gap-[0px] grow-[0.2] shrink-[0]">
-                  <div className="relative shrink-[0]">
-                    <div className="contents">
-                      <div aria-label="Footer Link" className="items-center flex size-min justify-center overflow-hidden relative gap-[10px]">
-                        <a href="https://www.instagram.com/bytimaxelsson/" className="items-center flex flex-col justify-start overflow-hidden relative w-min h-[17px] text-[rgb(0,_0,_238)] gap-[0px] shrink-[0]" style={{"textDecoration":"rgb(0, 0, 238)"}}>
-                          <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}>in</p>
-                          </div>
-                          <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}></p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                    <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}>,</p>
-                  </div>
-                  <div className="relative shrink-[0]">
-                    <div className="contents">
-                      <div aria-label="Footer Link" className="items-center flex size-min justify-center overflow-hidden relative gap-[10px]">
-                        <a href="https://www.youtube.com/@bytimaxelsson" className="items-center flex flex-col justify-start overflow-hidden relative w-min h-[17px] text-[rgb(0,_0,_238)] gap-[0px] shrink-[0]" style={{"textDecoration":"rgb(0, 0, 238)"}}>
-                          <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}>YT</p>
-                          </div>
-                          <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}></p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                    <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}>,</p>
-                  </div>
-                  <div className="relative shrink-[0]">
-                    <div className="contents">
-                      <div aria-label="Footer Link" className="items-center flex size-min justify-center overflow-hidden relative gap-[10px]">
-                        <a href="https://www.linkedin.com/in/tim-axelsson-a32645138/" className="items-center flex flex-col justify-start overflow-hidden relative w-min h-[17px] text-[rgb(0,_0,_238)] gap-[0px] shrink-[0]" style={{"textDecoration":"rgb(0, 0, 238)"}}>
-                          <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}>LI</p>
-                          </div>
-                          <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}></p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="items-center flex h-min justify-start overflow-hidden relative w-px basis-0 gap-[10px] grow-[0.6] shrink-[0]">
-                  <div className="relative shrink-[0]">
-                    <div className="contents">
-                      <div aria-label="Footer Link" className="items-center flex size-min justify-center overflow-hidden relative gap-[10px]">
-                        <a href="mailto:singhashirwad2004@gmail.com" className="items-center flex flex-col justify-start overflow-hidden relative w-min h-[17px] text-[rgb(0,_0,_238)] gap-[0px] shrink-[0]" style={{"textDecoration":"rgb(0, 0, 238)"}}>
-                          <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}>salve@maxsullivan.com</p>
-                          </div>
-                          <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}></p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="items-center flex h-min justify-end overflow-hidden relative w-px basis-0 gap-[10px] grow-[0.15] shrink-[0]">
-                  <div className="relative shrink-[0]">
-                    <div className="contents">
-                      <div aria-label="Footer Link" className="items-center flex size-min justify-center overflow-hidden relative gap-[10px]">
-                        <a href="https://ena.supply/" className="items-center flex flex-col justify-start overflow-hidden relative w-min h-[17px] text-[rgb(0,_0,_238)] gap-[0px] shrink-[0]" style={{"textDecoration":"rgb(0, 0, 238)"}}>
-                          <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}>©2025</p>
-                          </div>
-                          <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}></p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-    </div>
-  )
-}
+      {/* Brand Text */}
+      <div className="w-full flex justify-center items-center py-6 md:py-10">
+        <h1 className="font-baskervville text-[#FFAC16] text-[11.5vw] uppercase leading-none whitespace-nowrap tracking-tight">
+          <span className="italic pr-2 md:pr-4">BY</span>
+          {globalData.hero.brandName}
+        </h1>
+      </div>
 
-export default footer
+      {/* Bottom Links */}
+      <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0 mt-6 md:mt-10 mb-2">
+        {/* Left */}
+        <div className="text-left w-full md:w-1/4 flex justify-center md:justify-start">
+          <a href="https://ena.supply/" className="footer-link">POWERED BY FOUR CLOVER</a>
+        </div>
+
+        {/* Center Left */}
+        <div className="text-center w-full md:w-1/4 flex justify-center gap-1">
+          <a href="https://www.instagram.com/bymaxsullivan/" className="footer-link">X</a>
+          <span className="text-[#FFAC16] text-[15px] font-azeret">,</span>
+          <a href="https://www.youtube.com/@bymaxsullivan" className="footer-link">CV</a>
+          <span className="text-[#FFAC16] text-[15px] font-azeret">,</span>
+          <a href="https://www.linkedin.com/in/" className="footer-link">LI</a>
+        </div>
+
+        {/* Center Right */}
+        <div className="text-center w-full md:w-1/4 flex justify-center">
+          <a href="mailto:salve@maxsullivan.com" className="footer-link">SALVE@{globalData.hero.brandName.replace(/\s+/g, '').toUpperCase()}.COM</a>
+        </div>
+
+        {/* Right */}
+        <div className="text-right w-full md:w-1/4 flex justify-center md:justify-end">
+          <a href="https://ena.supply/" className="footer-link">©2025</a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

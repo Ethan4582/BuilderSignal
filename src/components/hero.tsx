@@ -49,7 +49,7 @@ const Hero = () => {
 
       <div
         aria-label="CTA"
-        className="items-center flex flex-col h-min justify-center relative w-full gap-0 py-[150px] shrink-0 z-30 bg-[#141414] mt-[75vh]"
+        className="items-center flex flex-col h-min justify-center relative w-full gap-0 pt-[150px] pb-[50px] shrink-0 z-30 bg-[#141414] mt-[75vh]"
       >
         <div className="flex flex-col justify-start relative whitespace-pre shrink-0">
           <p className="hero-tag text-[#F2F2F2] mb-1">{cta.tag}</p>
