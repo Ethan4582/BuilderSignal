@@ -12,73 +12,74 @@ export const globalData = {
    },
 
    hero: {
-      /** Row 1 — giant name banner */
       brandName: "TIM AXELSSON",
-
-      /** Row 2 — 2-column: Founder's Tapes card  |  video */
-      row2: {
-         card: {
-            tag: "(YouTube)",
-            title: "Founder's Tapes",
-            description: "THE UNSCRIPTED DOCUMENTARY, IN THE LIFE OF BUILDING AN EMPIRE",
-            href: "https://www.youtube.com/@bytimaxelsson",
-            image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=900&q=80",
+      heroRows: [
+         {
+            id: 'row1',
+            left: {
+               tag: '( YOUTUBE )',
+               hoverTag: '( FOUNDERS TAPES )',
+               title: 'YOUTUBE',
+               hoverTitle: "FOUNDER'S TAPES",
+               desc: 'THE UNSCRIPTED DOCUMENTARY, IN THE LIFE OF BUILDING AN EMPIRE',
+               href: 'https://www.youtube.com/@bytimaxelsson'
+            },
+            right: {
+               video: 'https://cdn.pixabay.com/video/2021/08/04/83896-584732177_large.mp4' // Placeholder since Firebase 401s
+            }
          },
-         media: {
-            image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80",
-            video: "https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fed7d987e76c3987c294818ddc1da8dcd0d5157ca.mp4?generation=1771885061942567&alt=media",
+         {
+            id: 'row2',
+            left: {
+               image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&q=80',
+               glassTitle: 'SAAS CARTEL',
+               hoverTitle: 'JOIN THE WAITLIST',
+               badge: 'Soon – Launch in Q3 2025',
+               href: 'https://www.saascartel.com/'
+            },
+            right: {
+               bg: '#141414',
+               tag: '(SAAS COMMUNITY)',
+               title: 'SAAS\nCARTEL',
+               hoverTitle: 'SAAS\nCOMMUNITY',
+               desc: 'FOR THE NEXT WAVE OF BUILDERS'
+            }
          },
-      },
-
-      /** Row 3 — 2-column: image/video  |  SaaS Cartel dark card */
-      row3: {
-         media: {
-            image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=80",
+         {
+            id: 'row3',
+            left: {
+               bg: '#FFFAED',
+               tag: '(ABOUT)',
+               bio: 'TIM AXELSSON IS AN ENTREPRENEUR DRAWN TO THE CRAFT OF BUILDING. A DECADE OF SHAPING VENTURES WAS THE GROUNDWORK—NOW BUILDING WITH FOCUS, THE FOUNDATION OF AN EMPIRE.',
+               photos: [
+                  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
+                  'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80'
+               ],
+               href: 'https://timaxelsson.com/about-me'
+            },
+            right: {
+               video: 'https://cdn.pixabay.com/video/2019/02/13/21356-317135069_large.mp4' // Placeholder
+            }
          },
-         card: {
-            tag: "(SaaS Community)",
-            title: "SaaS Cartel",
-            description: "FOR THE NEXT WAVE OF BUILDERS",
-            href: "https://www.saascartel.com/",
-         },
-      },
-
-      /** Row 4 — 2-column: About card  |  video */
-      row4: {
-         card: {
-            tag: "(ABOUT)",
-            bio: "Tim Axelsson is an entrepreneur drawn to the craft of building. A decade of shaping ventures was the groundwork—now building with focus, the foundation of an empire.",
-            href: "https://timaxelsson.com/about-me",
-            images: [
-               "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
-               "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
-            ],
-         },
-         media: {
-            video: "https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F0fbf9d5c95a066a637813fd825aeb60cc7e018b8.mp4?generation=1771885062234826&alt=media",
-            image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=900&q=80",
-         },
-      },
-
-      /** Row 5 — 2-column: journal video  |  Ledger / Newsletter card */
-      row5: {
-         media: {
-            video: "https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F2a83e4c2de9517bf64c6f94ede32bbbae96d44a2.mp4?generation=1771885062285419&alt=media",
-            image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=80",
-         },
-         card: {
-            tag: "(NEWSLETTER)",
-            description: "My thoughts about company building, SaaS news and other startup related stuff.",
-            title: "Ledger",
-            href: "https://timaxelsson.com/newsletter",
-         },
-      },
-
-      /** CTA strip */
+         {
+            id: 'row4',
+            left: {
+               video: 'https://cdn.pixabay.com/video/2020/05/11/38600-418701968_large.mp4',
+               image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=900&q=80'
+            },
+            right: {
+               bg: '#3D3D3D',
+               tag: '( NEWSLETTER )',
+               desc: 'MY THOUGHTS ABOUT COMPANY BUILDING, SAAS NEWS AND OTHER STARTUP RELATED STUFF.',
+               title: 'LEDGER',
+               href: 'https://timaxelsson.com/newsletter'
+            }
+         }
+      ],
       cta: {
          tag: "(reach out)",
          headline: "Let's build together",
-         href: "https://timaxelsson.com/contact",
-      },
-   },
+         href: "https://timaxelsson.com/contact"
+      }
+   }
 };

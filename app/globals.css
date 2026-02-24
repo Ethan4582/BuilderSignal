@@ -11,6 +11,14 @@
       @apply bg-black text-white antialiased;
       font-family: "Azeret Mono", monospace;
    }
+
+   .font-baskervville {
+      font-family: 'Baskervville', serif;
+   }
+
+   .font-azeret {
+      font-family: 'Azeret Mono', monospace;
+   }
 }
 
 @layer components {
@@ -50,80 +58,81 @@
 /* ── Hero shared utilities ─────────────────────────────── */
 
 .hero-root {
-   @apply bg-[#141414] text-[12px] min-h-[900px];
+   @apply bg-[#141414] text-[12px] relative w-full overflow-hidden;
    font-family: sans-serif;
 }
 
-/* Full-width two-column row */
-.hero-row {
-   @apply items-center flex h-min justify-center overflow-hidden relative w-full px-[10px] shrink-0;
+/* Full-width container with sticky brand name */
+.hero-brand-container {
+   @apply relative w-full h-[150vh] pointer-events-none z-0;
 }
 
-/* Square-aspect flex column cell that grows to fill row */
-.hero-cell {
-   @apply items-center aspect-square flex flex-col grow justify-center relative w-px basis-0 gap-[10px] shrink-0;
+.hero-brand-name {
+   @apply sticky top-[65vh] font-semibold text-center uppercase text-[#F2F2F2] text-[12vw] leading-none pointer-events-auto;
+   font-family: 'Baskervville', serif;
+   z-index: 10;
 }
 
-/* Square-aspect fixed-width cell (non-growing) */
-.hero-cell-fixed {
-   @apply aspect-square relative w-px shrink-0;
+/* CSS Grid Section */
+.hero-section {
+   @apply grid grid-cols-1 md:grid-cols-2 w-full relative z-10;
 }
 
-/* Card tile — light variant */
-.hero-card-light {
-   @apply items-center flex flex-col size-full justify-between relative bg-[#F2F2F2] py-5 text-[#0000EE];
+/* Base column style */
+.hero-col {
+   @apply relative flex flex-col justify-between overflow-hidden min-h-[72vh] p-8 w-full;
 }
 
-/* Card tile — dark variant */
-.hero-card-dark {
-   @apply items-center flex flex-col size-full justify-between relative bg-[#141414] py-5;
+/* Color variants */
+.hero-col-light {
+   @apply bg-[#F2F2F2] text-[#141414];
 }
 
-/* Card tile — cream/about variant */
-.hero-card-cream {
-   @apply items-center flex flex-col size-full justify-between relative bg-[#FFFAED] py-5 text-[#0000EE];
+.hero-col-dark {
+   @apply bg-[#141414] text-[#F2F2F2];
 }
 
-/* Card tile — charcoal/journal variant */
-.hero-card-charcoal {
-   @apply items-center flex flex-col size-full justify-between relative bg-[#3D3D3D] py-5 text-[#0000EE];
+.hero-col-cream {
+   @apply bg-[#FFFAED] text-[#141414];
 }
 
-/* Small mono label above / below content in a card */
+.hero-col-charcoal {
+   @apply bg-[#3D3D3D] text-[#F4F6F0];
+}
+
+.hero-col-image {
+   @apply p-0 overflow-hidden relative min-h-[72vh];
+}
+
+/* Typography */
 .hero-tag {
    @apply text-center uppercase text-[15px] leading-[18px];
    font-family: "Azeret Mono", monospace;
 }
 
-/* Serif display title inside cards */
-.hero-card-title {
-   @apply text-center uppercase text-[71px] leading-[71px];
+.hero-serif-xl {
+   @apply text-center uppercase text-[8vw] md:text-[6vw] lg:text-[71px] leading-[1.1] whitespace-pre-wrap;
    font-family: 'Baskervville', serif;
 }
 
-/* Serif display title — small (CTA) */
+.hero-serif-lg {
+   @apply text-center uppercase text-[10vw] md:text-[8vw] lg:text-[90px] leading-none;
+   font-family: 'Fahkwang', sans-serif;
+}
+
 .hero-cta-title {
    @apply text-center uppercase text-[52px] leading-[52px];
    font-family: 'Baskervville', serif;
 }
 
-/* Small mono description inside cards */
-.hero-card-desc {
+.hero-mono-desc {
    @apply text-center uppercase text-[15px] leading-[18px] opacity-50;
    font-family: "Azeret Mono", monospace;
 }
 
-/* Media fill — covers its parent absolutely */
 .hero-media-fill {
-   @apply absolute inset-0 block size-full object-cover overflow-clip;
+   @apply absolute inset-0 block h-full w-full object-cover overflow-hidden;
 }
-
-/* Hero name banner */
-.hero-name {
-   @apply font-semibold text-center capitalize text-[#F2F2F2] text-[152.7px] leading-[152.7px];
-   font-family: 'Baskervville', serif;
-}
-
 
 @font-face {
    font-display: swap;
