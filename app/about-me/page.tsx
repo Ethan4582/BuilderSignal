@@ -17,15 +17,25 @@ const AboutMe = () => {
 
          {/* Hero Section */}
          <div className="relative pt-[20vh] md:pt-[25vh] pb-[5vh] pl-4 md:pl-10 pr-0 flex flex-col justify-end min-h-[70vh] md:min-h-[85vh] overflow-hidden">
-            <div className="absolute right-[5%] top-[15vh] w-full md:w-[35%] h-[50vh] md:h-[70vh] z-0">
+            {/* Main Background Image */}
+            <div className="absolute inset-0 z-0 opacity-30 pointer-events-none">
+               <img
+                  src="https://plus.unsplash.com/premium_photo-1697730061063-ad499e343f26?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Background"
+                  className="w-full h-full object-cover"
+               />
+               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#141414]/50 to-[#141414]" />
+            </div>
+
+            <div className="absolute right-[5%] top-[15vh] w-full md:w-[35%] h-[50vh] md:h-[70vh] z-10">
                <img
                   src={globalData.hero.heroRows[2].left.photos[0]}
                   alt="Hero"
-                  className="w-full h-full object-cover grayscale opacity-90 object-top"
+                  className="w-full h-full object-cover grayscale opacity-90 object-top border border-white/10"
                />
             </div>
 
-            <h1 className="font-baskervville text-[#FFAC16] text-[16.5vw] leading-[0.8] uppercase z-10 relative mt-auto tracking-tight truncate w-[120%] -ml-1">
+            <h1 className="font-baskervville text-[#FFAC16] text-[12.5vw] leading-[0.8] uppercase z-10 relative mt-auto tracking-tight truncate w-[120%] -ml-1">
                {globalData.hero.brandName}
             </h1>
          </div>

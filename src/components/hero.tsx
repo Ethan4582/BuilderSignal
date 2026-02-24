@@ -22,7 +22,21 @@ const Hero = () => {
 
   return (
     <section className="bg-[#141414] relative text-[12px] font-sans overflow-hidden w-full">
-
+      {/* Hero Background Video */}
+      <div className="absolute top-0 left-0 right-0 h-[100vh] z-0 opacity-60 pointer-events-none overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          src="/assets/hero2.mp4"
+          className="w-full h-full object-cover"
+        />
+        {/* Top gradient to blend with navbar */}
+        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#141414] via-[#141414]/80 to-transparent flex-shrink-0" />
+        {/* Bottom gradient to blend into the rest of the dark hero section */}
+        <div className="absolute inset-x-0 bottom-0 h-[40vh] bg-gradient-to-t from-[#141414] via-[#141414]/90 to-transparent" />
+      </div>
 
       <div className="relative w-full z-10">
 
@@ -50,7 +64,7 @@ const Hero = () => {
         className="items-center flex flex-col h-min justify-center relative w-full gap-0 pt-[150px] pb-[50px] shrink-0 z-30 bg-[#141414] mt-[75vh]"
       >
         <div className="flex flex-col justify-start relative whitespace-pre shrink-0">
-          <p className="hero-tag text-[#F2F2F2] mb-1">{cta.tag}</p>
+          <p className="hero-tag text-[#F2F2F2] mb-1 tracking-[0.2em] md:tracking-normal">{cta.tag}</p>
         </div>
 
         <div className="relative">

@@ -4,9 +4,12 @@
 
 ## Overview
 
-BuilderSignal is a premium, high-performance personal brand and portfolio template designed for founders, creators, and entrepreneurs. It features an exquisite minimalist dark mode aesthetic, fluid CSS animations, and precise typography to showcase the reality of execution, building SaaS (like SaaS Cartel), and sharing startup insights.
+BuilderSignal is a high-performance personal brand template for founders and creators—built to showcase SaaS execution and startup insights with a refined dark aesthetic.
 
-**Tech Stack:** Next.js (App Router) • React • Tailwind CSS • Framer Motion
+
+## Tech Stack
+
+Next.js (App Router) • React • Tailwind CSS • Framer Motion
 
 ⚠️ **IMPORTANT NOTICE:** This project is completely free and open-source. Please ensure you provide proper credit to the original creators and developers when using or sharing this codebase.
 
@@ -33,7 +36,7 @@ pnpm dev
 
 ## Credits
 
-This project is a custom Next.js implementation developed to provide a high-performance, open-source personal brand landing page. It draws inspiration from modern minimalist architecture and bespoke agency designs.
+This project is a custom Next.js implementation developed to provide a high-performance, open-source personal brand landing page. It draws inspiration from modern minimalist architecture and bespoke agency designs i found from various sources.
 
 ## Developer
 

@@ -31,7 +31,7 @@ export const globalData = {
          {
             id: 'row2',
             left: {
-               image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&q=80',
+               image: 'https://cdn.prod.website-files.com/691024ccc3cf40dbe1a814bb/691aeb00ddd880ccc51900e0_1753014886441.webp',
                glassTitle: 'SAAS CARTEL',
                hoverTitle: 'JOIN THE WAITLIST',
                badge: 'Soon – Launch in Q1 2026',

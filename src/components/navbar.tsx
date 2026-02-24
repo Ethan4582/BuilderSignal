@@ -17,23 +17,23 @@ const Navbar = () => {
                }`}
             onMouseLeave={() => setIsOpen(false)}
          >
-        
+
             <div className="flex items-center justify-between w-full h-[38px] px-[10px] shrink-0">
-              
+
                <div className="flex-1 flex justify-start">
                   <a href="/" className="text-[15px] leading-[18px] uppercase" style={{ fontFamily: "'Azeret Mono', monospace" }}>
                      {brand}
                   </a>
                </div>
 
-              
+
                <div className="flex-1 flex justify-center">
                   <p className="text-[15px] leading-[18px] uppercase transition-all duration-300" style={{ fontFamily: "'Azeret Mono', monospace" }}>
                      {isOpen ? menuText : subtitle}
                   </p>
                </div>
 
-             
+
                <div className="flex-1 flex justify-end items-center pr-1 h-full">
                   <div
                      className="w-[30px] h-full flex items-center justify-end cursor-pointer"
@@ -47,7 +47,7 @@ const Navbar = () => {
                </div>
             </div>
 
-         
+
             <div
                className={`flex flex-col items-center justify-center w-full grow transition-all duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] ${isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-[20px] pointer-events-none'
                   }`}
