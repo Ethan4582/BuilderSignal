@@ -77,7 +77,7 @@ export function HeroRow2({ data }: HeroRow2Props) {
                   isHovered={hovered}
                   height={180}
                   className="italic text-[#F2F2F2] whitespace-pre-wrap text-[40px] md:text-[60px] lg:text-[75px] leading-tight"
-                  style={{ fontFamily: "'Fahkwang', sans-serif" }}
+                  style={{ fontFamily: "'Baskervville'" }}
                />
             </div>
 

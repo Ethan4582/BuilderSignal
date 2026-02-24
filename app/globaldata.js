@@ -1,6 +1,6 @@
 export const globalData = {
    navbar: {
-      brand: "TIM AXELSSON",
+      brand: "NOAH BENNETT",
       subtitle: "(FOUNDERS TAPES)",
       menuText: "(MENU)",
       links: [
@@ -12,7 +12,7 @@ export const globalData = {
    },
 
    hero: {
-      brandName: "TIM AXELSSON",
+      brandName: "MAX SULLIVAN",
       heroRows: [
          {
             id: 'row1',
@@ -50,12 +50,12 @@ export const globalData = {
             left: {
                bg: '#FFFAED',
                tag: '(ABOUT)',
-               bio: 'TIM AXELSSON IS AN ENTREPRENEUR DRAWN TO THE CRAFT OF BUILDING. A DECADE OF SHAPING VENTURES WAS THE GROUNDWORK—NOW BUILDING WITH FOCUS, THE FOUNDATION OF AN EMPIRE.',
+               bio: 'NOAH BENNETT IS AN ENTREPRENEUR DRAWN TO THE CRAFT OF BUILDING. A DECADE OF SHAPING VENTURES WAS THE GROUNDWORK—NOW BUILDING WITH FOCUS, THE FOUNDATION OF AN EMPIRE.',
                photos: [
                   'https://framerusercontent.com/images/L7RaBogFmJfOp4nzs7sLPcL9hI.jpg?scale-down-to=1024',
                   'https://framerusercontent.com/images/eUAb5nMvCfGj2ep4jmGnCaPD7GA.jpg?scale-down-to=1024'
                ],
-               href: 'https://timaxelsson.com/about-me'
+               href: '/about-me'
             },
             right: {
                video: 'https://framerusercontent.com/assets/oHeYHSdmyP62ztCVd9CwLKmXkZ0.mp4' // Placeholder
@@ -72,7 +72,7 @@ export const globalData = {
                tag: '( NEWSLETTER )',
                desc: 'MY THOUGHTS ABOUT COMPANY BUILDING, SAAS NEWS AND OTHER STARTUP RELATED STUFF.',
                title: 'LEDGER',
-               href: 'https://timaxelsson.com/newsletter'
+               href: '/'
             }
          }
       ],

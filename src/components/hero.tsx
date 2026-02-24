@@ -22,7 +22,7 @@ const Hero = () => {
 
 
         <div className="absolute top-0 left-0 right-0 h-[200vh] pointer-events-none z-0">
-          <div className="sticky top-0 h-[92vh] flex flex-col items-center justify-end pb-[24px] pointer-events-auto">
+          <div className="sticky top-0 h-[86vh] flex flex-col items-center justify-end pb-[50px] pointer-events-auto">
             <h1
               className="font-semibold text-center uppercase text-[#F2F2F2] text-[12vw] leading-none"
               style={{ fontFamily: "'Baskervville', serif" }}
@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
 
 
-        <div className="relative z-20 top-[92vh] px-[16px] flex flex-col gap-[16px]">
+        <div className="relative z-20 top-[81vh] px-[11px] flex flex-col gap-[11px]">
           {row1Data && <HeroRow1 data={row1Data} />}
           {row2Data && <HeroRow2 data={row2Data} />}
           {row3Data && <HeroRow3 data={row3Data} />}
@@ -44,7 +44,7 @@ const Hero = () => {
 
       <div
         aria-label="CTA"
-        className="items-center flex flex-col h-min justify-center relative w-full gap-[10px] py-[150px] shrink-0 z-30 bg-[#141414] mt-[92vh]"
+        className="items-center flex flex-col h-min justify-center relative w-full gap-[10px] py-[150px] shrink-0 z-30 bg-[#141414] mt-[75vh]"
       >
         <div className="flex flex-col justify-start relative whitespace-pre shrink-0">
           <p className="hero-tag text-[#F2F2F2]">{cta.tag}</p>

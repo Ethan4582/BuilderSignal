@@ -25,7 +25,7 @@ export function HeroRow3({ data }: HeroRow3Props) {
          {/* Left Column - Cream Card */}
          <a
             href={data.left.href}
-            className="hero-col hero-col-cream cursor-pointer"
+            className="hero-col hero-col-cream cursor-pointer transition-colors duration-500 hover:bg-[#EBE5D8]"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
          >
@@ -37,17 +37,17 @@ export function HeroRow3({ data }: HeroRow3Props) {
                <div className="w-[197px] h-[246px] overflow-hidden relative">
                   <div className="flex w-full h-full relative">
                      <div className={`w-full h-full absolute transition-transform duration-500 ease-in-out ${hovered ? '-translate-x-full' : 'translate-x-0'}`}>
-                        <img src={data.left.photos[0]} className="hero-media-fill" alt="Tim Axelsson 1" />
+                        <img src={data.left.photos[0]} className="hero-media-fill" alt="MAX SULLIVAN 1" />
                      </div>
                      <div className={`w-full h-full absolute transition-transform duration-500 ease-in-out ${hovered ? 'translate-x-0' : 'translate-x-full'}`}>
-                        <img src={data.left.photos[1]} className="hero-media-fill" alt="Tim Axelsson 2" />
+                        <img src={data.left.photos[1]} className="hero-media-fill" alt="MAX SULLIVAN 2" />
                      </div>
                   </div>
                </div>
             </div>
 
-            <div className="flex justify-center w-full">
-               <p className="hero-mono-desc text-[#141414] max-w-[80%] opacity-70">
+            <div className="flex justify-center w-full pb-6">
+               <p className={`hero-mono-desc text-[#141414] max-w-[80%] transition-opacity duration-500 ${hovered ? 'opacity-100' : 'opacity-70'}`}>
                   {data.left.bio}
                </p>
             </div>

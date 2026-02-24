@@ -46,7 +46,7 @@ export function HeroRow1({ data }: HeroRow1Props) {
             </div>
 
             <div className="flex justify-center w-full">
-               <p className="hero-mono-desc text-[#141414] max-w-[80%]">
+               <p className={`hero-mono-desc text-[#141414] mb-10 max-w-[80%] transition-opacity duration-500 ${hovered ? 'opacity-100' : 'opacity-50'}`}>
                   {data.left.desc}
                </p>
             </div>

@@ -82,9 +82,9 @@ const footer = () => {
                   <div className="relative shrink-[0]">
                     <div className="contents">
                       <div aria-label="Footer Link" className="items-center flex size-min justify-center overflow-hidden relative gap-[10px]">
-                        <a href="mailto: salve@timaxelsson.com" className="items-center flex flex-col justify-start overflow-hidden relative w-min h-[17px] text-[rgb(0,_0,_238)] gap-[0px] shrink-[0]" style={{"textDecoration":"rgb(0, 0, 238)"}}>
+                        <a href="mailto:singhashirwad2004@gmail.com" className="items-center flex flex-col justify-start overflow-hidden relative w-min h-[17px] text-[rgb(0,_0,_238)] gap-[0px] shrink-[0]" style={{"textDecoration":"rgb(0, 0, 238)"}}>
                           <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
-                            <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}>salve@timaxelsson.com</p>
+                            <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}>salve@maxsullivan.com</p>
                           </div>
                           <div aria-label="View project" className="flex flex-col justify-start relative whitespace-pre shrink-[0]">
                             <p className="text-center uppercase text-[rgb(255,_172,_22)] text-[15px] leading-[18px]" style={{"fontFamily":"\"Azeret Mono\", monospace","textDecoration":"rgb(255, 172, 22)"}}></p>
