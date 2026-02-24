@@ -29,7 +29,7 @@ const AboutMe = () => {
 
             <div className="absolute right-[5%] top-[15vh] w-full md:w-[35%] h-[50vh] md:h-[70vh] z-10">
                <img
-                  src={globalData.hero.heroRows[2].left.photos[0]}
+                  src={globalData.hero?.heroRows?.[2]?.left?.photos?.[0] || ""}
                   alt="Hero"
                   className="w-full h-full object-cover grayscale opacity-90 object-top border border-white/10"
                />

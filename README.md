@@ -1,6 +1,17 @@
 # BuilderSignal — The Founder's Journey
 
-![Hero Preview](public/assets/hero.png)
+![ Preview](public/assets/hero.png)
+
+![ Preview](public/assets/hero2.png)
+
+![ Preview](public/assets/hero3.png)
+
+![ Preview](public/assets/about1.png)
+
+![ Preview](public/assets/about2.png)
+
+![ Preview](public/assets/footer.png)
+
 
 ## Overview
 
